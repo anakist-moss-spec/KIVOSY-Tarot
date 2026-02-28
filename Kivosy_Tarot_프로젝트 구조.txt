@@ -1,0 +1,36 @@
+### 📋 프로젝트 구조:
+```
+Kivosy_Tarot/
+├── 이미지 일러스트/
+│   ├── #1/                            <- 개인 이미지용폴더 (업로드x)
+│   ├── #2/                            <- 개인 이미지용폴더 (업로드x)
+│   ├── 테두리 내부교환용.ai
+│   └── 외부 흰배경 날리기.ai
+│
+├── img/
+│   ├── tarot/                         <- 타로 이미지폴더
+│   │            ├── original/       <- 오리지날 이미지<-- (0.webp ~ 77.webp)
+│   │            ├── gold/          <- 커스텀)금빛 이미지<-- (0.webp ~ 77.webp)
+│   │            └── back/          <- 카드뒷면 이미지<-- (back1.webp, back2.webp)
+│   │
+│   │
+│   └── favicon.webp               # 파비콘이미지
+│   
+├── builders_sauce/       (기계실 - 여기 다 모으세요)
+│   ├── #01_final_merge.py                    <- 1번 공정<- 재료 준비
+│   ├── #02_translator_factory.py             <- 2번 공정<- 번역 가공
+│   ├── #03_generate_cards.py                <- 3번 공정<- 제품 포장 (HTML 생성)
+│   ├── #04_generate_all_cards_entry.py     <- 4번 공정<- all-cards 입구 페이지 자동 생성기
+│   └── raw_notes/                               <-(AI 메모장 .txt 파일들)
+│
+│
+├── cards/                (결과물 창고)
+│   ├── en/
+│   └── ja/
+│
+│
+├── index.html                          <- 웹 인터페이스
+├── script.js                             <- 함수모음
+├── daily-fortune.js                    <- 데일리 기능(미구현)
+├── style.css                            <- 스타일시트
+└── card-details-template.html     <- 각 카드 설명 팝업
